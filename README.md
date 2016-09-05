@@ -16,6 +16,7 @@ Root | Application | For | Commands
 * | Advanced Packaging Tool | Linux | `sudo apt-get update; sudo apt-get upgrade;`
   | fink | macOS | `fink selfupdate; fink update-all;`
   | Homebrew | macOS | `brew update; brew upgrade; brew cleanup;`
+  | Homebrew Caskroom | macOS | `brew cask update; brew cask cleanup;`
   | Nix | Linux / macOS | `nix-channel --update nixpkgs; nix-env -u '*';`
 * | Mac App Store | macOS | `sudo softwareupdate -i -a;`
 * | MacPorts | macOS | `sudo port selfupdate; sudo port upgrade outdated;`
