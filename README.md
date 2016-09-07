@@ -5,6 +5,7 @@ Update all package managers in one command.
 ## Installation
 
 - Download: `wget https://raw.githubusercontent.com/Quexint/upm/master/upm.sh ~/upm.sh`
+- Change file mode: `sudo chmod a+x ~/upm.sh`
 - Run: `~/upm.sh`
 
 ## Support
