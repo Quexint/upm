@@ -25,7 +25,7 @@ function run_command()
   eval "$1"
 }
 
-UPM_APT="sudo apt-get update; sudo apt-get upgrade;"
+UPM_APT="sudo apt-get -y update; sudo apt-get -y upgrade;"
 UPM_Fink="fink selfupdate; fink update-all;"
 UPM_Brew="brew update; brew upgrade; brew cleanup;"
 UPM_BrewCask="brew cask update; brew cask cleanup;"
@@ -33,7 +33,7 @@ UPM_Nix="nix-channel --update nixpkgs; nix-env -u '*';"
 UPM_MAS="sudo softwareupdate -i -a;"
 UPM_MacPorts="sudo port selfupdate; sudo port upgrade outdated;"
 UPM_Urpmi="urpmi.update -a; urpmi --auto-select;"
-UPM_Yum="sudo yum update; sudo yum upgrade;"
+UPM_Yum="sudo yum -y update; sudo yum -y upgrade;"
 
 UPM_Conda="conda update conda; conda update anaconda;"
 UPM_Cabal="cabal update;"
