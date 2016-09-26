@@ -21,6 +21,7 @@ Root | Application | For | Commands
   | Nix | Linux / macOS | `nix-channel --update nixpkgs; nix-env -u '*';`
 * | Mac App Store | macOS | `sudo softwareupdate -i -a;`
 * | MacPorts | macOS | `sudo port selfupdate; sudo port upgrade outdated;`
+* | Pacman | Arch Linux | `sudo pacman -Syyu --noconfirm;`
   | Urpmi | Linux | `urpmi.update -a; urpmi --auto-select;`
 * | Yellowdog Updater, Modified (yum) | Linux | `sudo yum update; sudo yum upgrade;`
 

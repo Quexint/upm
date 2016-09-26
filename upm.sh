@@ -32,6 +32,7 @@ UPM_BrewCask="brew cask update; brew cask cleanup;"
 UPM_Nix="nix-channel --update nixpkgs; nix-env -u '*';"
 UPM_MAS="sudo softwareupdate -i -a;"
 UPM_MacPorts="sudo port selfupdate; sudo port upgrade outdated;"
+UPM_Pacman="sudo pacman -Syyu --noconfirm;"
 UPM_Urpmi="urpmi.update -a; urpmi --auto-select;"
 UPM_Yum="sudo yum -y update; sudo yum -y upgrade;"
 
@@ -58,6 +59,7 @@ is_exist brew && echo "===== Updating Homebrew Caskroom =====" && run_command "$
 is_exist nix-channel && echo "===== Updating Nix =====" && run_command "$UPM_Nix"
 is_exist softwareupdate && echo "===== Updating Mac App Store =====" && run_command "$UPM_MAS"
 is_exist port && echo "===== Updating MacPorts =====" && run_command "$UPM_MacPorts"
+is_exist pacman && echo "===== Updating Pacman =====" && run_command "$UPM_Pacman"
 is_exist urpmi && echo "===== Updating urpmi =====" && run_command "$UPM_Urpmi"
 is_exist yum && echo "===== Updating yum =====" && run_command "$UPM_Yum"
 
